@@ -8,8 +8,8 @@ const awsConfig = {
   oauth: {
     domain: 'ascending-demo-azure.auth.us-east-1.amazoncognito.com',
     scope: ['email', 'openid'],
-    redirectSignIn: 'http://localhost:3000/',
-    redirectSignOut: 'http://localhost:3000/',
+    redirectSignIn: process.env.REACT_APP_SSO_COGNITO_SIGNIN_REDIRECT_URL,
+    redirectSignOut: process.env.REACT_APP_SSO_COGNITO_SIGNOUT_REDIRECT_URL,
     responseType: 'token',
   },
 };
