@@ -25,7 +25,7 @@
     "build:qa": "env-cmd -f .env.qa react-scripts build",
     "build:prod": "env-cmd -f .env.prod react-scripts build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
